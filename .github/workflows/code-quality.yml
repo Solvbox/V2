@@ -41,7 +41,7 @@ jobs:
         run: npm run flag-audit > flag-audit-report.txt
       - name: Upload Flag Audit Report
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: feature-flag-audit-report
           path: flag-audit-report.txt 
